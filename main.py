@@ -40,6 +40,7 @@ def download():
 
     command = [
         'yt-dlp',
+        '--cookies', 'cookies.txt',
         '-f', 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4',
         '-o', file_path,
         url
